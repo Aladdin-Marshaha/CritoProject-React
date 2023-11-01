@@ -1,0 +1,98 @@
+.article-and-news {
+
+    .container {
+
+        .first-part {
+
+            padding-top: 125px;
+            text-align: center;
+
+            @media (min-width: 992px) {
+                text-align: left;
+            }
+
+            p {
+
+                color: #F94D1C;
+
+            }
+
+            .h4-a {
+
+                @media (min-width: 992px) {
+                    
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                h4 {
+
+                    font-family: 'DM Sans', sans-serif;
+                    font-weight: 800;
+                    font-size: 40px;
+                    margin-bottom: 40px;
+
+                    
+                    @media (min-width: 576px) {
+                        
+                        font-size: 45px;
+                    }
+
+                    @media (min-width: 992px) {
+                        margin-bottom: 0px;
+                        
+                    }
+                }
+            }
+        }
+
+        .parent {
+
+            display: grid;
+            grid-template-columns: 1fr;
+            column-gap: 30px;
+
+            @media (min-width: 768px) {
+                
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+            .child {
+
+                text-decoration: none;
+
+                &:hover h3 {
+                 
+                    text-decoration: underline ;
+                }
+
+                img {
+
+                    padding-top: 40px;
+                    padding-bottom: 30px;
+                    width: 100%;
+                    height: auto;
+                    
+                }
+
+                p {
+                    color: #707070;
+                }
+
+                h3 {
+
+                    color: #191919;
+                    font-family: 'DM Sans', sans-serif;
+                    font-size: 22px;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        .center-content {
+
+            padding-top: 55px;
+            padding-bottom: 90px;
+
+        }
+    }
+}

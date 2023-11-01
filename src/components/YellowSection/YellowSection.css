@@ -1,0 +1,174 @@
+.yellow-section {
+  background-color: #F9D783;
+}
+@media (min-width: 576px) {
+  .yellow-section {
+    padding-bottom: 120px;
+  }
+}
+.yellow-section .container .first-part {
+  padding-top: 125px;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  .yellow-section .container .first-part {
+    text-align: left;
+  }
+}
+.yellow-section .container .first-part p {
+  color: #F94D1C;
+}
+@media (min-width: 992px) {
+  .yellow-section .container .first-part .h4-a {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.yellow-section .container .first-part .h4-a h4 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 800;
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+@media (min-width: 576px) {
+  .yellow-section .container .first-part .h4-a h4 {
+    font-size: 45px;
+  }
+}
+@media (min-width: 992px) {
+  .yellow-section .container .first-part .h4-a h4 {
+    margin-bottom: 0px;
+  }
+}
+.yellow-section .container .first-part .h4-a a {
+  border: solid 1px black;
+  font-weight: 500;
+}
+.yellow-section .container .team {
+  padding-top: 100px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  column-gap: 10px;
+  grid-auto-flow: dense;
+}
+@media (min-width: 576px) {
+  .yellow-section .container .team {
+    grid-template-columns: auto auto auto auto;
+  }
+}
+@media (min-width: 992px) {
+  .yellow-section .container .team {
+    column-gap: 40px;
+  }
+}
+.yellow-section .container .team .box img {
+  padding-bottom: 30px;
+  width: 100%;
+  height: auto;
+}
+.yellow-section .container .team .box .name {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 800;
+  font-size: 22px;
+  padding-bottom: 5px;
+}
+.yellow-section .container .center-content {
+  padding-top: 20px;
+  padding-bottom: 80px;
+}
+.yellow-section .andra-container {
+  background-color: #ffffff;
+  padding-top: 50px;
+}
+.yellow-section .andra-container .center-content {
+  display: block;
+  text-align: center;
+}
+.yellow-section .andra-container .center-content p {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #F94D1C;
+}
+.yellow-section .andra-container .center-content h5 {
+  font-family: "DM Sans", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+@media (min-width: 576px) {
+  .yellow-section .andra-container .center-content h5 {
+    font-size: 45px;
+    margin-bottom: 0px;
+  }
+}
+.yellow-section .andra-container .parent {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 992px) {
+  .yellow-section .andra-container .parent {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.yellow-section .andra-container .parent .child {
+  padding-bottom: 40px;
+}
+@media (min-width: 576px) {
+  .yellow-section .andra-container .parent .child {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-bottom: 50px;
+  }
+}
+@media (min-width: 992px) {
+  .yellow-section .andra-container .parent .child {
+    padding-bottom: 25px;
+  }
+}
+.yellow-section .andra-container .parent .child img {
+  padding-bottom: 15px;
+}
+@media (min-width: 992px) {
+  .yellow-section .andra-container .parent .child img {
+    padding-bottom: 30px;
+  }
+}
+.yellow-section .andra-container .parent .child p {
+  padding-bottom: 10px;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+@media (min-width: 992px) {
+  .yellow-section .andra-container .parent .child p {
+    padding-bottom: 25px;
+  }
+}
+.yellow-section .andra-container .parent .child .client {
+  display: flex;
+}
+.yellow-section .andra-container .parent .child .client img {
+  padding-right: 20px;
+}
+.yellow-section .andra-container .parent .child .client .client-info .name {
+  font-family: "DM Sans", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+}
+.yellow-section .andra-container .parent .child .client .client-info p {
+  color: #F94D1C;
+  font-size: 16px;
+  font-weight: 400;
+}
+.yellow-section .andra-container .center-content {
+  padding-top: 50px;
+  padding-bottom: 0px;
+}
+@media (min-width: 576px) {
+  .yellow-section .andra-container .center-content {
+    padding-top: 70px;
+    padding-bottom: 120px;
+  }
+}

@@ -1,0 +1,141 @@
+.about-company {
+  padding-top: 50px;
+}
+@media (min-width: 576px) {
+  .about-company {
+    padding-top: 75px;
+  }
+}
+@media (min-width: 768px) {
+  .about-company {
+    padding-top: 150px;
+  }
+}
+.about-company .container {
+  position: relative;
+  display: flex;
+}
+.about-company .container .left {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .about-company .container .left {
+    display: block;
+  }
+}
+.about-company .container .left .woman {
+  margin-left: 60px;
+}
+.about-company .container .left .white-line {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+}
+.about-company .container .left .box-on-picture {
+  background-color: #BEEBFF;
+  position: absolute;
+  bottom: 40px;
+  width: 370px;
+}
+.about-company .container .left .box-on-picture .name {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 900;
+  font-size: 20px;
+  margin-top: 40px;
+  margin-left: 25px;
+}
+.about-company .container .left .box-on-picture .name span {
+  color: #F94D1C;
+  font-size: 16px;
+}
+.about-company .container .left .box-on-picture .under-name {
+  margin-left: 25px;
+  margin-bottom: 45px;
+  margin-right: 60px;
+  padding-top: 20px;
+}
+.about-company .container .right {
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .about-company .container .right {
+    text-align: left;
+    margin-left: 110px;
+  }
+}
+@media (min-width: 1400px) {
+  .about-company .container .right {
+    margin-left: 190px;
+  }
+}
+.about-company .container .right .text .p-1 {
+  color: #F94D1C;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+.about-company .container .right .text h2 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+}
+.about-company .container .right .text .p-2 {
+  color: #707070;
+  margin-top: 30px;
+}
+.about-company .container .right .text .p-3 {
+  color: #707070;
+}
+.about-company .container .right .buttons {
+  margin-top: 40px;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 576px) {
+  .about-company .container .right .buttons {
+    margin-top: 80px;
+  }
+}
+@media (min-width: 1200px) {
+  .about-company .container .right .buttons {
+    justify-content: left;
+  }
+}
+@media (min-width: 400px) {
+  .about-company .container .right .buttons {
+    display: flex;
+  }
+}
+.about-company .container .right .buttons .btn-black {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+@media (min-width: 400px) {
+  .about-company .container .right .buttons .btn-black {
+    margin-right: 35px;
+  }
+}
+.about-company .container .right .buttons .btn-black:hover {
+  cursor: pointer;
+}
+.about-company .container .right .buttons .intro-button {
+  display: flex;
+  align-items: center;
+  color: #191919;
+  text-decoration: none;
+  padding: 5px 10px;
+  margin-bottom: 15px;
+  border-radius: 25px;
+  transition: box-shadow 0.2s ease-in-out;
+}
+.about-company .container .right .buttons .intro-button i {
+  padding-right: 20px;
+  font-size: 50px;
+}
+.about-company .container .right .buttons .intro-button:hover {
+  border: 1px solid black;
+  border-radius: 25px;
+  transition: box-shadow 0.2s ease-in-out, border 0.3 ease-in-out;
+  box-shadow: 3px 3px 10px 1px black;
+}

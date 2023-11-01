@@ -1,0 +1,245 @@
+.yellow-section {
+
+    background-color: #F9D783;
+
+    @media (min-width: 576px) {
+
+        padding-bottom: 120px;
+
+    }
+
+    .container {
+
+        .first-part {
+
+            padding-top: 125px;
+            text-align: center;
+
+            @media (min-width: 992px) {
+                text-align: left;
+            }
+
+            p {
+                color: #F94D1C;
+                
+            }
+
+            .h4-a {
+
+                @media (min-width: 992px) {
+                    
+                    display: flex;
+                    justify-content: space-between;
+                }
+
+                h4 {
+
+                    font-family: 'DM Sans', sans-serif;
+                    font-weight: 800;
+                    font-size: 35px;
+                    margin-bottom: 30px;
+
+                    @media (min-width: 576px) {
+                        
+                        font-size: 45px;
+                    }
+
+                    @media (min-width: 992px) {
+                        
+                        margin-bottom: 0px;
+                    }
+                }
+
+                a {
+                    border: solid 1px black;
+                    font-weight: 500;
+                }
+            }
+
+        }
+
+        .team {
+
+            padding-top: 100px;
+            display: grid;
+            grid-template-columns: auto auto ;
+            grid-template-rows: auto;
+            column-gap: 10px;
+            grid-auto-flow: dense;
+
+            @media (min-width: 576px) {
+
+                grid-template-columns: auto auto auto auto;
+                
+            }
+
+            @media (min-width: 992px) {
+
+                column-gap: 40px;
+            }
+
+            .box {
+
+                img {
+
+                    padding-bottom: 30px;
+                    width: 100%;
+                    height: auto;
+                    
+                }
+
+                .name {
+
+                    font-family: 'DM Sans', sans-serif;
+                    font-weight: 800;
+                    font-size: 22px;
+                    padding-bottom: 5px;
+                }
+            }
+        }
+
+        .center-content {
+
+            padding-top: 20px;
+            padding-bottom: 80px;
+        }
+    }
+
+    .andra-container {
+
+        background-color: #ffffff;
+        padding-top: 50px;
+
+
+        .center-content {
+
+            display: block;
+            text-align: center;
+
+            p {
+
+                font-family: 'Inter', sans-serif;
+                font-size: 18px;
+                font-weight: 500;
+                color: #F94D1C;
+
+            }
+
+            h5 {
+
+                font-family: 'DM Sans', sans-serif;
+                font-size: 40px;
+                font-weight: 700;
+                margin-bottom: 50px;
+
+                @media (min-width: 576px) {
+                    font-size: 45px;
+                    margin-bottom: 0px;
+                    
+                }
+                
+            }
+        }
+
+        .parent {
+
+            display: grid;
+            grid-template-columns: 1fr;
+
+            @media (min-width: 992px) {
+
+                grid-template-columns: 1fr 1fr 1fr;
+                
+            }
+            
+            .child {
+
+                padding-bottom: 40px;
+
+                @media (min-width: 576px) {
+
+                margin-left: 50px;
+                margin-right: 50px;
+                padding-bottom: 50px;
+                }
+
+                @media (min-width: 992px) {
+
+                    padding-bottom: 25px;
+                    
+                }
+
+                img {
+
+                    padding-bottom: 15px;
+
+                    @media (min-width: 992px) {
+
+                        padding-bottom: 30px;
+                        
+                    }
+
+                }
+
+                p {
+
+                    padding-bottom: 10px;
+                    font-family: 'Inter', sans-serif;
+                    font-size: 18px;
+                    font-weight: 400;
+
+                    @media (min-width: 992px) {
+
+                        padding-bottom: 25px;
+                        
+                    }
+                }
+
+                .client {
+
+                    display: flex;
+
+                    img {
+
+                        padding-right: 20px;
+                    }
+
+                    .client-info {
+
+                        .name {
+
+                            font-family: 'DM Sans', sans-serif;
+                            font-size: 22px;
+                            font-weight: 700;
+
+                        }
+    
+                        p {
+                            
+                            color: #F94D1C;
+                            font-size: 16px;
+                            font-weight: 400;
+                        }
+
+                    }
+
+                }
+            }
+        }
+
+        .center-content {
+
+            padding-top: 50px;
+            padding-bottom: 0px;
+
+            @media (min-width: 576px) {
+
+                padding-top: 70px;
+                padding-bottom: 120px; 
+                
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,37 @@
+.connect {
+  background-color: #F0EFE9;
+  padding: 100px;
+  position: relative;
+  z-index: 0;
+}
+.connect .container {
+  text-align: center;
+}
+.connect .container a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #191919;
+  font-weight: 300;
+}
+.connect .container a:hover {
+  font-weight: 400;
+}
+.connect .container p {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  z-index: 1;
+}
+@media (min-width: 570px) {
+  .connect .container p {
+    font-size: 56px;
+  }
+}
+.connect .line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 40%;
+  height: auto;
+}

@@ -1,0 +1,48 @@
+.contact-information {
+
+    .container {
+
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px , 390px));
+        justify-content: center;
+        gap: 25px;
+        padding-top: 120px;
+        padding-bottom: 80px;
+
+        .parent {
+
+            display: grid;
+            grid-template-columns: auto 1fr;
+            border: 1px solid #D1D1D1;
+
+            img {
+                margin-top: 45px;
+                margin-right: 25px;
+                margin-left: 50px;
+            }
+
+            .child {
+                margin-top: 45px;
+                margin-right: 80px;
+                margin-bottom: 30px;
+
+                h5 {
+
+                    font-family: 'DM Sans', sans-serif;
+                    font-weight: 700;
+                    font-size: 22px;
+                    margin-bottom: 30px;
+                }
+
+                p {
+
+                    font-family: 'Inter', sans-serif;
+                    font-size: 18px;
+                    font-weight: 400;
+                    color: #707070;
+                    margin-top: -10px;
+                }
+            }
+        }
+    }
+}

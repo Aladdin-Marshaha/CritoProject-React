@@ -1,0 +1,17 @@
+.logos .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+@media (min-width: 576px) {
+  .logos .container {
+    margin-top: 90px;
+    margin-bottom: 90px;
+  }
+}
+.logos .container img {
+  padding-bottom: 35px;
+  display: grid;
+  margin: auto;
+}

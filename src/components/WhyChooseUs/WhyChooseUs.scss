@@ -1,0 +1,119 @@
+.why-choose-us {
+
+    .container {
+
+        @media (min-width: 1200px) {
+
+            display: grid;
+            grid-template-columns: 40% 60%;
+            
+        }
+
+        .left {
+
+            .section-title {
+
+                text-align: center;
+
+                @media (min-width: 1200px) {
+                    text-align: left;
+                    
+                }
+
+                h2 {
+
+                    font-size: 40px;
+
+                    @media (min-width: 576px) {
+
+                        font-size: 45px;
+                    }
+                }
+            }
+
+            .boxes {
+
+                display: grid;
+                grid-template-columns: 1fr;
+
+                @media (min-width: 768px) {
+                    
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                }
+
+                @media (min-width: 1200px) {
+                    display: block;
+                }
+
+                .box {
+
+                    text-decoration: none;
+                    display: flex;
+    
+                    @media (min-width: 1200px) {
+                        text-align: left;
+                    }
+
+                    &:hover h5 {
+
+                        text-decoration: underline;
+                    
+                    }
+    
+                    img {
+                        margin-right: 25px;
+                        margin-bottom: 40px;
+                        
+                    }
+    
+                    h5 {
+                        color: #191919;
+                        font-family: 'DM Sans', sans-serif;
+                        font-weight: 700;
+                        font-size: 22px;
+                    }
+    
+                    p {
+                        color: #707070;
+                    }
+                }
+            }
+        }
+
+        .right {
+
+            position: relative;
+            display: none;
+
+            @media (min-width: 1200px) {
+
+                display: block;
+                
+            }
+
+            .tow-womans {
+
+                position: absolute;
+                bottom: 100px;
+                right: 0;
+                z-index: 1;
+                width: 100%;
+                height: auto;
+                padding-left: 200px;
+    
+            }
+
+            .bak-picture {
+
+                z-index: 0;
+                position: absolute;
+                bottom: 0;
+                left: 100px;
+                width: 100%;
+                height: auto;
+
+            }
+        }
+    }
+}

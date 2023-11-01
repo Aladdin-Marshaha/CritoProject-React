@@ -1,0 +1,79 @@
+.message {
+    
+    .container {
+
+        background-color: #F0EFE9;
+        margin-bottom: 120px;
+        padding-top: 140px;
+        justify-content: center;
+        align-items: center;
+
+
+        p {
+            text-align: center;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: 35px;
+            margin-bottom: 0px;
+
+            @media (min-width: 576px) {
+
+                font-size: 45px;
+            }
+        }
+
+        form {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+
+
+
+            input {
+
+                outline: none;
+                width: 80%;
+                margin-top: 15px;
+                border: none;
+                border-radius: 25px;
+                padding: 15px;
+                padding-left: 40px;
+
+
+                &:hover {
+                    border: solid 1px black;
+                }
+               
+            }
+
+            textarea {
+
+                outline: none;
+
+                width: 80%;
+                margin-top: 15px;
+                border-radius: 25px;
+                border: none;
+                resize: none;
+                padding: 15px;
+                padding-left: 40px;
+
+                &:hover {
+                    border: solid 1px black;
+                }
+            }
+
+            button {
+
+                width: 80%;
+                margin-top: 40px;
+                margin-bottom: 100px;
+            }
+
+        }
+
+    }
+}
