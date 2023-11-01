@@ -1,6 +1,7 @@
 import React from 'react'
 import './Footer.css';
 import crito from "../../images/Logo-in-foot.svg"
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -8,8 +9,8 @@ const Footer = () => {
       <section className="last-section">
         <img className="line" src="images/gray-line-in-thefoot.svg" alt=""/>
         <div className="container">
-            <div className="logo"> 
-                <img className="crito" src={crito} alt="" />
+            <div className="logo">
+               <Link to="/"><img className="crito" src={crito} alt="" /></Link>  
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat obcaecati voluptas voluptates! Voluptates laborum nam ratione minus necessitatibus, iure praesentium.</p>
             </div>
             <div className="box1 boxes" >

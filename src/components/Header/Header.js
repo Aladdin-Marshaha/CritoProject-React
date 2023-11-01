@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Header.css"
+import { NavLink, Link } from 'react-router-dom'
 import Logo from "../../images/Logo.svg"
 
 const Header = () => {
@@ -7,7 +8,7 @@ const Header = () => {
     <>
         <header>
             <div className="container">
-                <a href="index.html"><img src={Logo} alt="crito logotype" /></a>
+                <Link to="/"><img src={Logo} alt="crito logotype" /></Link>
                 <button className="menu-bars"><i className="fa-solid fa-bars-staggered"></i></button>
                 <div className="menu">
                     <div className="top-menu">
@@ -35,10 +36,10 @@ const Header = () => {
                     </div>
                     <div className="main-menu">
                         <nav>
-                            <a href="index.html">Home</a>
-                            <a href="services.html">Service</a>
-                            <a href="news.html">News</a>
-                            <a href="connect.html">Contact</a>
+                            <NavLink to="/">Home</NavLink>
+                            <NavLink to="/services">Services</NavLink>
+                            <NavLink to="/news">News</NavLink>
+                            <NavLink to="/contacts">Contact</NavLink>
                         </nav>
                         <a className="btn-yellow btn-login" href="login.html">Login <i className="fa-regular fa-arrow-up-right"></i></a> 
                     </div>
