@@ -1,5 +1,6 @@
 import React from 'react'
 import "./Features.css"
+import Button from '../../generics/Button'
 const Features = () => {
   return (
     <>
@@ -9,7 +10,7 @@ const Features = () => {
                     <a href="http://"> 
                         <p> Features </p>
                         <h3> Our Accounting is trusted by thousand of companies </h3>
-                        <div className="btn-yellow"> Learn More <i className="fa-regular fa-arrow-up-right"></i></div>
+                        <Button type = "yellow" text="Learn More" url =""/>
                         </a>
                 </div>
                 <div className="section-right"> 

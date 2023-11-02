@@ -8,6 +8,7 @@ import Stars from "../../images/Stars.svg"
 import Cassandra from "../../images/Cassandra.svg"
 import Amanda from "../../images/Amanda.svg"
 import Jack from "../../images/Jack.svg"
+import Button from "../../generics/Button"
  
 
 const YellowSection = () => {
@@ -19,7 +20,7 @@ const YellowSection = () => {
                     <p>Meet Our Team</p>
                     <div className="h4-a">
                         <h4>Experience Team Members</h4>
-                        <a className="btn-yellow" href="#">Browse Team <i className="fa-regular fa-arrow-up-right"></i></a> 
+                        <Button type = "yellow" text = "Browse Team"/>
                     </div>
                 </div>
                 <div className="team">
@@ -89,7 +90,7 @@ const YellowSection = () => {
                     </div>
                 </div>
                 <div className="center-content">
-                    <a className="btn-black" href="projects.html"> All Reviews <i className="fa-regular fa-arrow-up-right"></i></a>
+                    <Button type = "black" text = "All Reviews"/>
                 </div>
             </div>
         </section>

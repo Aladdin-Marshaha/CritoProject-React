@@ -1,5 +1,6 @@
 import React from 'react'
 import "./NewsLetter.css"
+import Button from "../../generics/Button"
 
 const NewsLetter = () => {
   return (
@@ -10,7 +11,7 @@ const NewsLetter = () => {
                 <h2> Get News Updates By Signup  </h2>
                 <form>
                     <input type="text" placeholder="username@domain.com"/>
-                    <button className="btn-yellow">Subscribe <i className="fa-regular fa-arrow-up-right"></i></button>
+                    <Button type = "yellow" text = "Subscribe"/>
                 </form>
             </div>
         </section> 

@@ -1,0 +1,26 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  padding-bottom: 60px;
+}
+
+.footer {
+  margin-top: auto;
+  height: 610px;
+  background-color: #0E1021;
+}
+
+.last-section {
+  margin-top: auto;
+  background-color: #0E1021;
+}

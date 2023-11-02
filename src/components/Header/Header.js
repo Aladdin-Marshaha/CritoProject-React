@@ -2,7 +2,7 @@ import React from 'react'
 import "./Header.css"
 import { NavLink, Link } from 'react-router-dom'
 import Logo from "../../images/Logo.svg"
-
+import Button from "../../generics/Button"
 const Header = () => {
   return (
     <>
@@ -41,7 +41,7 @@ const Header = () => {
                             <NavLink to="/news">News</NavLink>
                             <NavLink to="/contacts">Contact</NavLink>
                         </nav>
-                        <a className="btn-yellow btn-login" href="login.html">Login <i className="fa-regular fa-arrow-up-right"></i></a> 
+                        <Button type="yellow" text = "Login" url = "*" />
                     </div>
                 </div>
             </div>

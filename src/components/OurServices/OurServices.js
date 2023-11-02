@@ -1,5 +1,6 @@
 import React from 'react';
 import "./OurServices.css";
+import Button from "../../generics/Button"
 
 const OurServices = () => {
   return (
@@ -37,7 +38,7 @@ const OurServices = () => {
                     </a>
                 </div>
                 <div className="center-content">
-                    <a className="btn-transparent" href="services.html"> Browse Services <i className="fa-regular fa-arrow-up-right"></i></a>
+                    <Button text="Browse Services" />
                 </div>       
             </div>
             <img src="images/right-white-line.svg" alt=""/>

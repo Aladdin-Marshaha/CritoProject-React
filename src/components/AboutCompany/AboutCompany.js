@@ -1,6 +1,7 @@
 import React from 'react'
 import "./AboutCompany.css"
 import woman from "../../images/a-wamn-with-laptop.svg"
+import Button from "../../generics/Button"
 
 const AboutCompany = () => {
   return (
@@ -23,7 +24,7 @@ const AboutCompany = () => {
                         <p className="p-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis esse quasi incidunt adipisci accusantium libero provident voluptate amet.</p>
                     </div>
                     <div className="buttons"> 
-                        <a className="btn-black">Learn More <i className="fa-regular fa-arrow-up-right"></i></a>
+                        <Button text = "Learn More" type="black" />
                         <a className="intro-button" href=""><i className="fa-thin fa-circle-play"></i>Intro Video</a>
                     </div>
                 </div>

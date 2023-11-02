@@ -4,6 +4,7 @@ import articleImage1 from "../../images/article-Image-1.png"
 import articleImage2 from "../../images/article-Image-2.png"
 import articleImage3 from "../../images/article-Image-3.png"
 import articleImage4 from "../../images/article-Image-4.png"
+import Button from "../../generics/Button"
 
 const ProjectStuies = () => {
   return (
@@ -37,7 +38,7 @@ const ProjectStuies = () => {
                     </a>
                 </div>
                 <div className="center-content">
-                    <a className="btn-black" href="projects.html"> All Recent Projects <i className="fa-regular fa-arrow-up-right"></i></a>
+                    <Button type= "black" text = "All Recent Projects" />
                 </div>
             </div>
         </section>

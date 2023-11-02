@@ -3,6 +3,7 @@ import "./ArticleAndNews.css"
 import foto1 from "../../images/news-foto1.svg"
 import foto2 from "../../images/news-foto2.svg"
 import foto3 from "../../images/news-foto3.svg"
+import Button from "../../generics/Button"
 
 const ArticleAndNews = () => {
   return (
@@ -13,7 +14,7 @@ const ArticleAndNews = () => {
                     <p>Article & News</p>
                     <div className="h4-a" >
                         <h4>Get Every Single Articles & News</h4>
-                        <a className="btn-transparent" href="http://">Browse Articles<i className="fa-regular fa-arrow-up-right"></i></a>
+                        <Button type = "" text= "Browse Articles" />
                     </div>
                 </div>
                 <div className="parent">
