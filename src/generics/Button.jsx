@@ -2,7 +2,7 @@ import React from 'react'
 import "./Button.css"
 import { Link } from 'react-router-dom'
 
-const Button = ({type, text, url}) => {
+const Button = ({className, type, text, url}) => {
 
   const GetButtonClassName = () => {
     switch(type) {
@@ -16,7 +16,7 @@ const Button = ({type, text, url}) => {
   }
 
   return (
-    <Link className={GetButtonClassName ()} to={url}>
+    <Link className={GetButtonClassName() + ' ' + className} to={url}>
       {text} 
       <i className="fa-regular fa-arrow-up-right"></i></Link>  
   )

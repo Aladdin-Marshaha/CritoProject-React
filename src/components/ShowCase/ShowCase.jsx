@@ -13,7 +13,7 @@ const ShowCase = () => {
                 <div className="content"> 
                     <h1>We Provide The Best Business Solutions</h1>
                     <p>Establish your vision and value proposition and turn them into testable prototypes.</p>
-                    <Button type="yellow" text = "Get Consulting" url = "consulting.html" />
+                    <Button className="button1" type="yellow" text = "Get Consulting" url = "consulting.html" />
                     <Button type="" text = "Learn More" url = "services.html" /> 
                 </div>
                 <img src={ShowCaseImage} alt="image of a man in a suit with a tablet" />
