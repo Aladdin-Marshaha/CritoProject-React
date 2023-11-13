@@ -11,7 +11,7 @@ import ProjectStuies from '../components/ProjectStuies/ProjectStuies'
 import YellowSection from '../components/YellowSection/YellowSection'
 import ArticleAndNews from '../components/ArticleAndNews/ArticleAndNews'
 import NewsLetter from '../components/NewsLetter/NewsLetter'
-
+import GetArticle from '../components/GetArticle/GetArticle'
 
 const Home = () => {
   return (
@@ -28,6 +28,7 @@ const Home = () => {
           <ProjectStuies />
           <YellowSection />
           <ArticleAndNews />
+          <GetArticle />
           <NewsLetter />
         </main>
         <Footer />

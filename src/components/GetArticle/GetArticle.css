@@ -1,0 +1,6 @@
+.container .carousel {
+  position: relative;
+}
+.container .custom-dot-list-style {
+  bottom: -10px;
+}

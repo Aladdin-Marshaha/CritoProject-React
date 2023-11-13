@@ -43,7 +43,7 @@ const Footer = () => {
             </div>
         </div>
      </section>
-      <div className='footer'> 
+      <div className='footer'>
         <div className="container">
             <section className="the-foot">
                 <div className="crito"> © 2023 Crito - Consulting Company Inc. All Rights Reserved. </div>

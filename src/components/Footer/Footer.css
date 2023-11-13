@@ -84,7 +84,6 @@ html, body {
 }
 @media (min-width: 768px) {
   .section-title {
-    padding-top: 120px;
     padding-bottom: 90px;
   }
 }

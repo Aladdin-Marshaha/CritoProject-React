@@ -1,0 +1,87 @@
+.OurNewsAndArticles{
+    .container {
+        margin-top: 80px;
+    
+        @media (min-width: 576px) {
+            margin-top: 140px;
+        }
+        
+        h2 {
+            margin-bottom: 40px;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 700;
+            font-size: 45px;
+        }
+    
+        .parent {
+    
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+    
+            @media (min-width: 576px) {
+    
+                grid-template-columns: 1fr 1fr;
+                
+            }            
+            
+            @media (min-width: 768px) {
+    
+                grid-template-columns: 1fr 1fr 1fr;
+                
+            }
+    
+            .child {
+    
+                text-decoration: none;
+                color: #0E1021;
+                position: relative;
+    
+                &:hover h3 {
+                    
+                    text-decoration: underline;
+                }
+    
+                img {
+    
+                    margin-bottom: 30px;
+                    margin-top: 20px;
+                    width: 420px;
+                    height: 230px;
+                }
+    
+                p {
+    
+                    font-family: 'Inter', sans-serif;
+                    font-size: 16px;
+                    font-weight: 400;
+                    color: #707070;
+                }
+    
+                h3 {
+    
+                    font-family: 'DM Sans', sans-serif;
+                    font-weight: 700;
+                    font-size: 22px;
+                }
+    
+                .image-container{
+                    .date-box {
+                        position: absolute;
+                        top: 35px;
+                        left: 15px;
+                        background-color: #F9D783;
+                        padding: 10px 10px 0px 10px;
+                        ;
+    
+                        p{
+                            color: #191919;
+                            font-weight: 600;
+                        }
+                    }
+                }
+    
+            }
+        }
+    }
+}

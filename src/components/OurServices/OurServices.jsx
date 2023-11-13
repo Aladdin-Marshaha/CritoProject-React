@@ -13,25 +13,25 @@ const OurServices = () => {
                 </div>
                 <div className="boxes">
                     <a href="http://">
-                        <div class="streck">____</div>
+                        <div className="streck">____</div>
                         <h3> Business Advice </h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
                         <div className="pil"><i className="fa-solid fa-circle-arrow-right" style={{ color: '#000000' }}></i></div>
                     </a>
                     <a href="http://">
-                        <div class="streck">____</div>
+                        <div className="streck">____</div>
                         <h3> Startup Business </h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
                         <div className="pil"><i className="fa-solid fa-circle-arrow-right" style={{ color: '#000000' }}></i></div>
                     </a>
                     <a href="http://">
-                        <div class="streck">____</div>
+                        <div className="streck">____</div>
                         <h3> Financial Advice </h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
                         <div className="pil"><i className="fa-solid fa-circle-arrow-right" style={{ color: '#000000' }}></i></div>
                     </a>
                     <a href="http://">
-                        <div class="streck">____</div>
+                        <div className="streck">____</div>
                         <h3> Risk Management </h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
                         <div className="pil"><i className="fa-solid fa-circle-arrow-right" style={{ color: '#000000' }}></i></div>
