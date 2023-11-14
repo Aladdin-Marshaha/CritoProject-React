@@ -12,6 +12,7 @@ import YellowSection from '../components/YellowSection/YellowSection'
 import ArticleAndNews from '../components/ArticleAndNews/ArticleAndNews'
 import NewsLetter from '../components/NewsLetter/NewsLetter'
 import GetArticle from '../components/GetArticle/GetArticle'
+import Titles from '../generics/Titles/Titles'
 
 const Home = () => {
   return (
@@ -27,13 +28,11 @@ const Home = () => {
           <WhyChooseUs />
           <ProjectStuies />
           <YellowSection />
-          <ArticleAndNews />
           <GetArticle />
           <NewsLetter />
         </main>
         <Footer />
     </div>
-
   )
 }
 

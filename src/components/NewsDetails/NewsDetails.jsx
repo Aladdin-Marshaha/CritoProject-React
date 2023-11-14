@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import './NewsDetails.css';
 import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
+import GetArticle from '../GetArticle/GetArticle';
 
 const NewsDetails = () => {
   const { id } = useParams();
@@ -27,7 +29,7 @@ const NewsDetails = () => {
   }, [id]);
 
   return (
-    <div>
+    <>
       <Header />
 
       <div className='container'>
@@ -42,8 +44,9 @@ const NewsDetails = () => {
         </div>
       )}
       </div>
-
-    </div>
+        <GetArticle/>
+        <Footer />
+    </>
   );
 };
 

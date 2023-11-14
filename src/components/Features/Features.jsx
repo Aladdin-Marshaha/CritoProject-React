@@ -1,6 +1,11 @@
 import React from 'react'
 import "./Features.css"
 import Button from '../../generics/Button'
+import FeaturesParts from '../../generics/FeaturesParts/FeaturesParts'
+import icon1 from '../../images/icon-hands.svg'
+import icon2 from '../../images/icon-light.svg'
+import icon3 from '../../images/icon-gowingupp.svg'
+import icon4 from '../../images/icon-box.svg'
 const Features = () => {
   return (
     <>
@@ -14,26 +19,10 @@ const Features = () => {
                         </a>
                 </div>
                 <div className="section-right"> 
-                    <a href="http://"> 
-                        <img src="images/icon-hands.svg" alt=""/>
-                        <h5> Business Advice </h5>
-                        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
-                        </a>
-                    <a href="http://"> 
-                        <img src="images/icon-light.svg" alt=""/>
-                        <h5> Startup Business </h5>
-                        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
-                    </a>
-                    <a href="http://"> 
-                        <img src="images/icon-gowingupp.svg" alt=""/>
-                        <h5> Financial Advice </h5>
-                        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
-                    </a>
-                    <a href="http://"> 
-                        <img src="images/icon-box.svg" alt=""/>
-                        <h5> Risk Management </h5>
-                        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. </p>
-                    </a>
+                    <FeaturesParts img={icon1} Title='Business Advice' paragraf='Lorem ipsum, dolor sit amet consectetur adipisicing elit.' />
+                    <FeaturesParts img={icon2} Title='Startup Business' paragraf='Lorem ipsum, dolor sit amet consectetur adipisicing elit.' />
+                    <FeaturesParts img={icon3} Title='Financial Advice' paragraf='Lorem ipsum, dolor sit amet consectetur adipisicing elit.' />
+                    <FeaturesParts img={icon4} Title='Risk Management' paragraf='Lorem ipsum, dolor sit amet consectetur adipisicing elit.' />
                 </div>  
             </div>
         </section>

@@ -1,6 +1,19 @@
-.container .carousel {
+@charset "UTF-8";
+.ArticleNews {
+  margin-top: 70px;
+  margin-bottom: 80px;
+}
+.ArticleNews .TitleSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ArticleNews .TitleSection .BrowseArticles {
+  text-decoration: none;
+}
+.ArticleNews .carousel {
   position: relative;
 }
-.container .custom-dot-list-style {
+.ArticleNews .custom-dot-list-style {
   bottom: -10px;
 }

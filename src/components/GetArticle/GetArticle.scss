@@ -1,4 +1,16 @@
-.container {
+.ArticleNews {
+    margin-top: 70px;
+    margin-bottom: 80px;
+
+    .TitleSection{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .BrowseArticles{
+            text-decoration: none;
+        }
+    }
 
     .carousel {
         
@@ -14,3 +26,8 @@
         bottom: -10px;
     }
 }
+/* Lägg till detta i din CSS-fil */
+.carousel .react-router-link {
+    text-decoration: none !important;
+  }
+  

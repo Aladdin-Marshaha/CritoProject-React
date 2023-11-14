@@ -3,8 +3,8 @@ import 'react-multi-carousel/lib/styles.css';
 import Carousel from 'react-multi-carousel';
 import './GetArticle.css'
 import NewsCard from '../NewsCard/NewsCard'
-
-
+import { Link } from 'react-router-dom';
+import Titles from '../../generics/Titles/Titles';
 
 const GetArticle = () => {
 
@@ -37,7 +37,11 @@ const GetArticle = () => {
   };
 
   return (
-    <div className='container'>
+    <div className='container ArticleNews'>
+      <div className='TitleSection'>
+        <Titles p='Article & News' H2='Get Every Single Articles & News'/>
+        <Link  className='btn-transparent' to='/news'> Browse Articles </Link>
+      </div>
       <section className='carousel'>
         <Carousel 
           responsive={responsive}
@@ -47,9 +51,11 @@ const GetArticle = () => {
           dotListClass="custom-dot-list-style"
           itemClass="carousel-item-padding-40-px"
           renderDotsOutside={true}
-        >
-        {articles.map((article) => (
-            <NewsCard key={articles.id} ACard={article} />
+          >
+         {articles.map((article) => (
+            <Link key={article.id} to={`/news/${article.id}`}>
+              <NewsCard ACard={article} />
+            </Link>
           ))}
         </Carousel>
       </section>

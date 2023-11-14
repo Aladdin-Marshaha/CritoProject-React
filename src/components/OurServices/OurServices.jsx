@@ -1,6 +1,7 @@
 import React from 'react';
 import "./OurServices.css";
 import Button from "../../generics/Button"
+import ServiceBox from '../../generics/ServiceBox/ServiceBox';
 
 const OurServices = () => {
   return (
@@ -12,30 +13,10 @@ const OurServices = () => {
                     <h2>We Provide The Best Service For Consulting</h2>
                 </div>
                 <div className="boxes">
-                    <a href="http://">
-                        <div className="streck">____</div>
-                        <h3> Business Advice </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
-                        <div className="pil"><i className="fa-solid fa-circle-arrow-right" style={{ color: '#000000' }}></i></div>
-                    </a>
-                    <a href="http://">
-                        <div className="streck">____</div>
-                        <h3> Startup Business </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
-                        <div className="pil"><i className="fa-solid fa-circle-arrow-right" style={{ color: '#000000' }}></i></div>
-                    </a>
-                    <a href="http://">
-                        <div className="streck">____</div>
-                        <h3> Financial Advice </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
-                        <div className="pil"><i className="fa-solid fa-circle-arrow-right" style={{ color: '#000000' }}></i></div>
-                    </a>
-                    <a href="http://">
-                        <div className="streck">____</div>
-                        <h3> Risk Management </h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.</p>
-                        <div className="pil"><i className="fa-solid fa-circle-arrow-right" style={{ color: '#000000' }}></i></div>
-                    </a>
+                    <ServiceBox title='Business Advice' paragraf='Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.' />
+                    <ServiceBox title='Startup Business' paragraf='Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.' />
+                    <ServiceBox title='Financial Advice' paragraf='Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.' />
+                    <ServiceBox title='Risk Management' paragraf='Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis in nam possimus.' />
                 </div>
                 <div className="center-content">
                     <Button text="Browse Services" />

@@ -6,6 +6,7 @@ import icon3 from "../../images/icon-3.svg"
 import icon4 from "../../images/icon-4.svg"
 import twoWomans from "../../images/two-womans.svg"
 import bakPicture from "../../images/gray-bak-picture.svg"
+import WhyChooseUsParts from '../../generics/WhyChooseUsParts/WhyChooseUsParts'
 
 const WhyChooseUs = () => {
   return (
@@ -18,34 +19,10 @@ const WhyChooseUs = () => {
                         <h2>Why We Are The Best Business Consulting Agency</h2>
                     </div>
                     <div className="boxes">
-                        <a href="http://" className="box">
-                            <img src={icon1} alt=""/>
-                            <div>
-                                <h5>Process Excellence</h5>
-                                <p>Lorem, ipsum dolor sit amet consectetur.</p>
-                            </div>
-                        </a>
-                        <a href="http://" className="box">
-                            <img src={icon2} alt=""/>
-                            <div>
-                                <h5>Strategic Planning</h5>
-                                <p>Lorem, ipsum dolor sit amet consectetur.</p>
-                            </div>
-                        </a>
-                        <a href="http://" className="box">
-                            <img src={icon3} alt="" />
-                            <div>
-                                <h5>Experience Design</h5>
-                                <p>Lorem, ipsum dolor sit amet consectetur.</p>
-                            </div>
-                        </a>
-                        <a href="http://" className="box">
-                            <img src={icon4} alt=""/>
-                            <div>
-                                <h5>Artificial Inteligence</h5>
-                                <p>Lorem, ipsum dolor sit amet consectetur.</p>
-                            </div>
-                        </a>
+                        <WhyChooseUsParts img={icon1}  title='Process Excellence' paragraf='Lorem, ipsum dolor sit amet consectetur.'/>
+                        <WhyChooseUsParts img={icon2}  title='Strategic Planning' paragraf='Lorem, ipsum dolor sit amet consectetur.'/>
+                        <WhyChooseUsParts img={icon3}  title='Experience Design' paragraf='Lorem, ipsum dolor sit amet consectetur.'/>
+                        <WhyChooseUsParts img={icon4}  title='Artificial Inteligence' paragraf='Lorem, ipsum dolor sit amet consectetur.'/>
                     </div>
                 </div>
                 <div className="right">
