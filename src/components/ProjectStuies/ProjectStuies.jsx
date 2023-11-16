@@ -5,6 +5,7 @@ import articleImage2 from "../../images/article-Image-2.png"
 import articleImage3 from "../../images/article-Image-3.png"
 import articleImage4 from "../../images/article-Image-4.png"
 import Button from "../../generics/Button"
+import ProjectCaseStudies from '../../generics/ProjectCaseStudies/ProjectCaseStudies'
 
 const ProjectStuies = () => {
   return (
@@ -16,26 +17,10 @@ const ProjectStuies = () => {
                     <h2> Let’s Looks Our Global Projects </h2>
                 </div>
                 <div className="project-and-cases">
-                    <a className="project" href="#">
-                        <img src={articleImage1} alt="a man hands reading a business peper"/>
-                        <h3>Grow your business</h3>
-                        <div className="readmore">Read More<i className="fa-regular fa-arrow-up-right"></i></div>
-                    </a>
-                    <a className="project" href="#">
-                        <img src={articleImage2} alt="Pink Apple products"/>
-                        <h3>Why your client needs a responsive website</h3>
-                        <div className="readmore"> Read More<i className="fa-regular fa-arrow-up-right"></i></div>
-                    </a>
-                    <a className="project" href="#">
-                        <img src={articleImage3} alt="Desk with office supplies"/>
-                        <h3>Educate your employees to get better results</h3>
-                        <div className="readmore"> Read More<i className="fa-regular fa-arrow-up-right"></i></div>
-                    </a>
-                    <a className="project" href="" >
-                        <img src={articleImage4} alt="Laptop with Business Intelligence Insights"/>
-                        <h3>Business Insights is a important piece of your business</h3>
-                        <div className="readmore"> Read More<i className="fa-regular fa-arrow-up-right"></i></div>
-                    </a>
+                    <ProjectCaseStudies img={articleImage1} title="Grow your business" url="#" />
+                    <ProjectCaseStudies img={articleImage2} title="Why your client needs a responsive website" url="#" />
+                    <ProjectCaseStudies img={articleImage3} title="Educate your employees to get better results" url="#" />
+                    <ProjectCaseStudies img={articleImage4} title="Business Insights is an important piece of your business" url="#" />
                 </div>
                 <div className="center-content">
                     <Button type= "black" text = "All Recent Projects" />
@@ -46,4 +31,4 @@ const ProjectStuies = () => {
   )
 }
 
-export default ProjectStuies
+export default ProjectStuies;

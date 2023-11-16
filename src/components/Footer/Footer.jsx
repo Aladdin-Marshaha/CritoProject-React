@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './Footer.css';
 import crito from "../../images/Logo-in-foot.svg"
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
+
   return (
     <>
       <section className="last-section">

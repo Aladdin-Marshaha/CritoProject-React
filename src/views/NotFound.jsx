@@ -6,13 +6,13 @@ import Button from '../generics/Button';
 const NotFound = () => {
   return (
     <div className='wrapper'>
-      <main>
-        <h1>404 Page Not Found</h1>
-        <Button type="" text="Go bak to home" url="/" />
-
+      <main className='main'>
+        <h1 className='notFound'>404 Page Not Found</h1>
+        <div className='goToBack'>
+           <Button type="" text="Go back to home" url="/" />
+        </div>
       </main>
       <div className='lastSection'>
-        {/* Innehållet i din sista sektion */}
       </div>
       <div className='footer'>
         <Footer />

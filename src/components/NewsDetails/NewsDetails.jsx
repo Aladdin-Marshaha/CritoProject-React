@@ -36,11 +36,10 @@ const NewsDetails = () => {
       {article && (
         <div>
           <h2>{article.title}</h2>
-          <p>{article.author}</p>
-          <p>{article.published}</p>
-          <p>{article.category}</p>
+          <p className='category'>{article.category}</p>
+          <p className='author'>{article.author}</p>
           <img className='articleImg' src={article.imageUrl} alt={article.title} />
-          <p>{article.content}</p>
+          <p className='content'>{article.content}</p>
         </div>
       )}
       </div>

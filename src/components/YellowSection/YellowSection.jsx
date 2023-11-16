@@ -4,11 +4,13 @@ import Kristine from "../../images/Kristine.svg"
 import Mark from "../../images/Mark.svg"
 import Kimberly from "../../images/Kimberly.svg"
 import Justin from "../../images/Justin.svg"
-import Stars from "../../images/Stars.svg"
+import stars from "../../images/Stars.svg"
 import Cassandra from "../../images/Cassandra.svg"
 import Amanda from "../../images/Amanda.svg"
 import Jack from "../../images/Jack.svg"
 import Button from "../../generics/Button"
+import Members from '../../generics/Members/Members'
+import Testimonial from '../../generics/Testimonial/Testimonial'
  
 
 const YellowSection = () => {
@@ -24,26 +26,10 @@ const YellowSection = () => {
                     </div>
                 </div>
                 <div className="team">
-                    <div className="box">
-                        <img src={Kristine} alt=""/>
-                        <div className="name">Kristine Palmer</div>
-                        <p>Chef Operation Officer</p>
-                    </div>
-                    <div className="box">
-                        <img src={Mark} alt=""/>
-                        <div className="name">Mark Aubri</div>
-                        <p>Senior Consultant</p>
-                    </div>
-                    <div className="box">
-                        <img src={Kimberly} alt=""/>
-                        <div className="name">Kimberly Hansen</div>
-                        <p>Senior Consultant</p>
-                    </div>
-                    <div className="box">
-                        <img src={Justin} alt=""/>
-                        <div className="name">Justin Willoman</div>
-                        <p>Senior Tech Consultant</p>
-                    </div>
+                    <Members img={Kristine} name='Kristine Palmer' text='Chef Operation Officer' />
+                    <Members img={Mark} name='Mark Aubri' text='Senior Consultant' />
+                    <Members img={Kimberly} name='Kimberly Hansen' text='Senior Consultant' />
+                    <Members img={Justin} name='Justin Willoman' text='Senior Tech Consultant' />
                 </div>
                 <div className="center-content">
                     <img src="images/punkter.svg" alt=""/>
@@ -55,39 +41,9 @@ const YellowSection = () => {
                     <h5>What Our Client Says</h5>
                 </div>
                 <div className="parent">
-                    <div className="child">
-                        <img src={Stars} alt="stars"/>
-                        <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium libero, ad dignissimos velit qui, dolorum obcaecati cum saepe nesciunt nemo eligendi numquam voluptate"</p>
-                        <div className="client">
-                            <img src={Cassandra} alt=""/>
-                            <div className="client-info">
-                                <div className="name">Cassandra Warren</div>
-                                <p>Business Manager, Dorfus</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="child">
-                        <img src={Stars} alt="stars"/>
-                        <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium libero, ad dignissimos velit qui, dolorum obcaecati cum saepe nesciunt nemo eligendi numquam voluptate"</p>
-                        <div className="client">
-                            <img src={Amanda} alt=""/>
-                            <div className="client-info">
-                                <div className="name">Amanda Tulling</div>
-                                <p>Senior Developer, Square</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="child">
-                        <img src={Stars} alt="stars"/>
-                        <p>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium libero, ad dignissimos velit qui, dolorum obcaecati cum saepe nesciunt nemo eligendi numquam voluptate"</p>
-                        <div className="client">
-                            <img src={Jack} alt=""/>
-                            <div className="client-info">
-                                <div className="name">Jack McDogglas</div>
-                                <p>Key Account Manager, Gobona</p>
-                            </div>
-                        </div>
-                    </div>
+                    <Testimonial stars={stars} img={Cassandra} name= 'Cassandra Warren' profession='Business Manager, Dorfus' text='"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium libero, ad dignissimos velit qui, dolorum obcaecati cum saepe nesciunt nemo eligendi numquam voluptate"' />
+                    <Testimonial stars={stars} img={Amanda} name= 'Amanda Tulling' profession='Senior Developer, Square' text='"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium libero, ad dignissimos velit qui, dolorum obcaecati cum saepe nesciunt nemo eligendi numquam voluptate"' />
+                    <Testimonial stars={stars} img={Jack} name= 'Jack McDogglas' profession='Key Account Manager, Gobona' text='"Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium libero, ad dignissimos velit qui, dolorum obcaecati cum saepe nesciunt nemo eligendi numquam voluptate"' />
                 </div>
                 <div className="center-content">
                     <Button type = "black" text = "All Reviews"/>

@@ -1,7 +1,8 @@
-@charset "UTF-8";
 .ArticleNews {
-  margin-top: 70px;
+  margin-top: 170px;
   margin-bottom: 80px;
+  padding-top: 50px;
+  border-top: solid 1px #6A6C71;
 }
 .ArticleNews .TitleSection {
   display: flex;
@@ -16,4 +17,8 @@
 }
 .ArticleNews .custom-dot-list-style {
   bottom: -10px;
+}
+
+.carousel .react-router-link {
+  text-decoration: none !important;
 }

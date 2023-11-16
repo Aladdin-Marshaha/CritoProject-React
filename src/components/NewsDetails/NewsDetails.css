@@ -8,13 +8,32 @@ html, body {
 }
 
 h2 {
-  margin-top: 50px;
+  margin-top: 80px;
   font-family: "DM Sans", sans-serif;
-  font-size: 35px;
+  font-size: 45px;
+  font-weight: 600;
+}
+
+.category {
+  font-family: "Inter", sans-serif;
+  margin-top: 50px;
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.author {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
 }
 
 .articleImg {
   width: 50%;
   height: auto;
   margin-bottom: 30px;
+}
+
+.content {
+  margin-bottom: 50px;
+  font-size: 1.2rem;
 }
