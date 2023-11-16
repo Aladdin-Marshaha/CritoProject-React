@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Header from '../components/Header/Header'
 import Footer from '../components/Footer/Footer'
 import ShowCase from '../components/ShowCase/ShowCase'
@@ -13,11 +13,22 @@ import ArticleAndNews from '../components/ArticleAndNews/ArticleAndNews'
 import NewsLetter from '../components/NewsLetter/NewsLetter'
 import GetArticle from '../components/GetArticle/GetArticle'
 import Titles from '../generics/Titles/Titles'
+import { Button } from 'bootstrap'
 
 const Home = () => {
+
+  const goToTop = useRef()
+
+  const moveUp = () => {
+    goToTop.current.scrollIntoView({
+      behavior: 'smooth'
+    })
+  }
+
   return (
 
     <div className='wrapper'>
+      <div ref={goToTop} ></div>
       <Header />
         <main>
           <ShowCase />
@@ -31,6 +42,10 @@ const Home = () => {
           <GetArticle />
           <NewsLetter />
         </main>
+        <div className='gototopHome'>
+          <button className='goToTop' onClick={moveUp} ><i class="fa-sharp fa-solid fa-up fa-bounce"></i></button>
+        </div>
+        
         <Footer />
     </div>
   )

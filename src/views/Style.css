@@ -32,3 +32,37 @@ html, body {
 .goToBack{
   margin-top: 30px;
 }
+
+.gototopHome {
+  position: relative;
+}
+
+.goToTop {
+  border: none;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  width: 100px;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.up {
+  padding-left: 15px;
+}
+
+.goToTop::before {
+  content: 'Go to top';
+  display: none;
+  color: #0d0d0d;
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  width: 100px;
+  transition: display 0.3s ease;
+}
+
+.goToTop:hover::before {
+  display: block;
+}
