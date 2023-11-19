@@ -1,87 +1,7 @@
-// import React, { useState, useEffect } from 'react';
-// import "./LeaveMessage.css";
-// import { useFormik } from 'formik';
-
-// const LeaveMessage = () => {
-//   const [messageStatus, setMessageStatus] = useState('');
-//   const [showStatus, setShowStatus] = useState(false);
-//   const [isError, setIsError] = useState(false);
-
-//   const form = useFormik({
-//     initialValues: {
-//       name: '',
-//       email: '',
-//       message: ''
-//     },
-
-//     onSubmit: async (values, { resetForm }) => {
-//       try {
-//         const result = await fetch('https://win23-assignment.azurewebsites.net/api/contactform', {
-//           method: 'post',
-//           headers: {
-//             'content-type': 'application/json'
-//           },
-//           body: JSON.stringify(values)
-//         });
-
-//         if (result.ok) {
-//           setMessageStatus('Meddelandet har skickats');
-//           resetForm();
-//           setIsError(false);
-//         } else {
-//           setMessageStatus('Meddelandet har INTE skickats');
-//           setIsError(true);
-//         }
-//         setShowStatus(true);
-
-//         setTimeout(() => {
-//           setShowStatus(false);
-//         }, 3000); // Visa statusmeddelandet i 3 sekunder
-//       } catch (error) {
-//         setMessageStatus('Något gick fel vid skickandet av meddelandet.');
-//         setShowStatus(true);
-//         setIsError(true);
-
-//         setTimeout(() => {
-//           setShowStatus(false);
-//         }, 3000); // Visa statusmeddelandet i 3 sekunder
-
-//         console.error('Fel: ', error);
-//       }
-//     }
-//   });
-
-//   return (
-//     <section className="message">
-//       <div className="container">
-//         <p>Leave us a message</p>
-//         <p>for any information.</p>
-//         <form onSubmit={form.handleSubmit} noValidate>
-//           <input type="text" name="name" placeholder="Name*" value={form.values.name} onChange={form.handleChange}  autoFocus/>
-//           <input type="email" name="email" placeholder="Email*" value={form.values.email} onChange={form.handleChange} />
-//           <textarea name="message" cols="0" rows="6" placeholder="Your Message*" value={form.values.message} onChange={form.handleChange} ></textarea>
-//           <button type='submit' className='btn-yellow button'>Send message</button>
-//         </form>
-//         <div style={{ height: "50px" }}></div>
-//         <div className="status-container">
-//           {showStatus && (
-//             <p className={`messageStatus ${isError ? 'error' : ''} ${showStatus ? 'fade-in' : 'fade-out'}`}>
-//               {messageStatus}
-//             </p>
-//           )}
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default LeaveMessage;
-
-
 import React, { useState, useEffect } from 'react';
 import "./LeaveMessage.css";
 import { useFormik } from 'formik';
-import * as Yup from 'yup'; // Import Yup for validation
+import * as Yup from 'yup';
 
 const LeaveMessage = () => {
   const [messageStatus, setMessageStatus] = useState('');
@@ -129,7 +49,7 @@ const LeaveMessage = () => {
 
         setTimeout(() => {
           setShowStatus(false);
-        }, 3000); // Visa statusmeddelandet i 3 sekunder
+        }, 3000);
       } catch (error) {
         setMessageStatus('Något gick fel vid skickandet av meddelandet.');
         setShowStatus(true);
@@ -137,7 +57,7 @@ const LeaveMessage = () => {
 
         setTimeout(() => {
           setShowStatus(false);
-        }, 3000); // Visa statusmeddelandet i 3 sekunder
+        }, 3000);
 
         console.error('Fel: ', error);
       }
